@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Ugeseddel 6: Videnskabelig Forståelse og AI</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Ugeseddel 6: Videnskabelig Forståelse og AI</h1>
+</header>
+<p>Er det et mål for videnskaben, at forskerne skal øge deres
+<em>forståelse</em>? Hvis ja, så ser det ud til, at det bliver sværere
+at nå dette mål, da mængden af data stiger eksponentielt, mens
+specialiseringerne bliver mere snævre. Vi er nået til en æra med ”big
+science”, hvor den enkelte forsker nemt kan blive et tandhjul i den
+store maskine.</p>
+<p>I løbet af denne uge diskuterer vi, om forståelse stadig kan og bør
+være et mål for videnskabsfolk – og om vi kan skærpe opfattelsen af,
+hvad målet er. Vi ser især på de trusler, som AI udgør for den
+videnskabelige forståelse, og vi overvejer, om disse trusler kan
+omdannes til muligheder for at øge forståelsen.</p>
+<h1 id="forelæsning">Forelæsning</h1>
+<p>Ved: Hans Halvorson</p>
+<p>Inden forelæsningen skal du have læst følgende tekster fra
+kompendiet:</p>
+<ul>
+<li><p>De Regt og Dieks (2005): A contextual approach to scientific
+understanding</p></li>
+<li><p>Krenn, M., Pollice, R., et al. (2022): On scientific
+understanding with artificial intelligence</p></li>
+</ul>
+<h1 id="case-forelæsning">Case-forelæsning</h1>
+<p>Dato: onsdag den 29. maj</p>
+<p>Ved: Markus Jochum, Professor i TeamOcean, NBI <a
+href="https://www.gfy.ku.dk/~nuterman/teamocean/index.html">https://www.gfy.ku.dk/~nuterman/teamocean/index.html</a></p>
+<p>Emnet: Maskinlæring i oceanografi</p>
+<h1 id="øvelser">Øvelser</h1>
+<h2 id="time-1-videnskabelig-forståelse">Time 1: Videnskabelig
+forståelse</h2>
+<h3
+id="gruppeoplæg-gruppe-9-fremlægger-følgende-10-15-minutter">Gruppeoplæg
+(gruppe 9) fremlægger følgende (10-15 minutter)</h3>
+<p>I de Regt og Dieks’ artikel berører de en gammel debat mellem to
+forskellige syn på videnskabelig forklaring: kausal-mekaniske og
+unifikationistiske opfattelser. I jeres oplæg skal I komme ind på
+følgende punkter:</p>
+<ol type="1">
+<li><p>Sammenlign og modstil disse to syn på forklaring. Forklar nogle
+af deres fordele og ulemper.</p></li>
+<li><p>Forklar de Regt og Dieks’ argument om, at begge disse typer
+forklaringer giver forståelse.</p></li>
+<li><p>Forklar de Regt og Dieks’ opfattelse af, hvornår en teori er
+”intelligible”.</p></li>
+</ol>
+<h3 id="section"></h3>
+<h3 id="gruppeopgaver-20-minutter-1">Gruppeopgaver (20 minutter)</h3>
+<ol type="1">
+<li><p>Hvad ville de Regt og Dieks sige til en kartesiansk fysiker, der
+hævdede, at Newtons fysik er uforståelig, fordi de kræfter, som han
+henviser til, ikke kan forklares mekanisk?</p></li>
+<li><p>Har de Regts og Dieks’ kriterium nogen betydning for spørgsmålet
+om, hvad vi skal gøre ved kvantemekanikken?</p></li>
+<li><p>I sidste uge talte vi om matematisering og klagen over, at det
+går ud over forståelsen. I denne uge ser vi de Regt og Dieks hævde, at
+forståelse måles ud fra evnen til at komme med kvalitative forudsigelser
+i modsætning til nøjagtige kvantitative forudsigelser. Er deres
+redegørelse forudindtaget i forhold til en mere matematisk tilgang til
+fysik? Kan matematisk forståelse ikke bidrage til fysisk
+forståelse?</p></li>
+</ol>
+<p>Plenumopsamling</p>
+<h2 id="section-1"></h2>
+<h2 id="time-2-videnskabelig-forståelse-og-ai">Time 2: Videnskabelig
+forståelse og AI</h2>
+<h3
+id="gruppeoplæg-gruppe-10-fremlægger-følgende-10-15-minutter">Gruppeoplæg
+(gruppe 10) fremlægger følgende (10-15 minutter)</h3>
+<p>Beskriv venligst Krenn et al.s syn på udsigterne til, at kunstig
+intelligens kan bidrage til videnskabelig forståelse. I jeres
+præsentation skal I komme ind på følgende punkter:</p>
+<ol type="1">
+<li><p>Forklar med jeres egne ord de tre grundlæggende dimensioner for
+AI, der bidrager til ny videnskabelig forståelse.</p></li>
+<li><p>Forklar begrebet “computational microscope” med henvisning til
+mindst ét eksempel (evt. et eksempel fra Krenn et al. eller et af jeres
+egne). Er der noget mere her end bare evnen til at køre
+computersimuleringer?</p></li>
+<li><p>Hvordan kan vi ifølge Krenn et al. bedømme, om en AI har opnået
+forståelse?</p></li>
+</ol>
+<h3 id="gruppeopgaver-20-minutter-2">Gruppeopgaver (20 minutter)</h3>
+<ol type="1">
+<li><p>Har du allerede brugt AI i jeres kurser eller i din egen
+forskning? Er der nogen måder, hvor AI virkelig har hjulpet jer med at
+forstå tingene bedre?</p></li>
+<li><p>På hvilke måder kan en AI-samarbejdspartner være mere nyttig end
+en menneskelig samarbejdspartner? På hvilke måder er menneskelige
+samarbejdspartnere stadig mere værdifulde end nogen kendt AI?</p></li>
+</ol>
+<p>Plenumopsamling</p>
+<h2 id="section-2"></h2>
+<h2 id="time-3-er-ai-revolutionerende">Time 3: Er AI
+revolutionerende?</h2>
+<h3 id="gruppeopgaver-30-minutter">Gruppeopgaver (30 minutter)</h3>
+<p>Der er meget hype om AI, og formålet med denne diskussion er at
+overveje, om der faktisk er tale om en videnskabelig revolution eller et
+videnskabeligt fremskridt. Diskuter følgende spørgsmål:</p>
+<ol type="1">
+<li><p>Hvordan vil I skelne mellem innovation på det teknologiske niveau
+og innovation inden for videnskaben? Kan I nævne nogle teknologiske
+eller økonomiske eller samfundsmæssige innovationer, som <em>ikke</em>
+bør regnes som innovative i videnskabelig forstand?</p></li>
+<li><p>Giv et par eksempler på idemæssige innovationer i videnskabens
+historie. Hvad var der revolutionerende ved dem?</p></li>
+<li><p>Hvilket aspekter af AI vil efter jeres mening mest sandsynligt
+bidrage til fremtidige videnskabelige innovationer?</p></li>
+</ol>
+<p>Plenumopsamling</p>
+</body>
+</html>
